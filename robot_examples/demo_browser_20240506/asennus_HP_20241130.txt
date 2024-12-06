@@ -1,0 +1,248 @@
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit>mkdir demo_browser
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit>cd demo_browser
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>python --version
+Python 3.12.2
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>poetry init --python "^3.12"
+
+This command will guide you through creating your pyproject.toml config.
+
+Package name [demo_browser]:
+Version [0.1.0]:
+Description []:
+Author [Teemu Sipiläinen <AF9274@student.jamk.fi>, n to skip]:  Teemu Sipiläinen <tsipilainen@yahoo.com>
+License []:
+
+Would you like to define your main dependencies interactively? (yes/no) [yes] no
+Would you like to define your development dependencies interactively? (yes/no) [yes] no
+Generated file
+
+[tool.poetry]
+name = "demo-browser"
+version = "0.1.0"
+description = ""
+authors = ["Teemu Sipiläinen <tsipilainen@yahoo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+Do you confirm generation? (yes/no) [yes] yes
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>poetry add robotframework robotframework-browser
+Creating virtualenv demo-browser in D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser\.venv
+Using version ^7.1.1 for robotframework
+Using version ^19.0.1 for robotframework-browser
+
+Updating dependencies
+Resolving dependencies... (2.6s)
+
+Package operations: 14 installs, 0 updates, 0 removals
+
+  - Installing colorama (0.4.6)
+  - Installing grpcio (1.68.0)
+  - Installing natsort (8.4.0)
+  - Installing protobuf (5.28.3)
+  - Installing robotframework (7.1.1)
+  - Installing robotframework-pythonlibcore (4.4.1)
+  - Installing setuptools (75.6.0)
+  - Installing click (8.1.7)
+  - Installing grpcio-tools (1.68.0)
+  - Installing overrides (7.7.0)
+  - Installing robotframework-assertion-engine (3.0.3)
+  - Installing seedir (0.5.0)
+  - Installing wrapt (1.17.0)
+  - Installing robotframework-browser (19.0.1)
+
+Writing lock file
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>poetry shell
+Spawning shell within D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser\.venv
+
+(demo-browser-py3.12) D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>rfbrowser init
+2024-11-30 20:20:41,590 [INFO    ] ==============================================================================================================
+2024-11-30 20:20:41,590 [INFO    ] Installing node dependencies...
+2024-11-30 20:20:45,465 [INFO    ] Installing rfbrowser node dependencies at D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser\.venv\Lib\site-packages\Browser\wrapper
+2024-11-30 20:20:47,700 [INFO    ] npm WARN config production Use `--omit=dev` instead.
+2024-11-30 20:20:56,325 [INFO    ]
+2024-11-30 20:20:56,325 [INFO    ] added 81 packages, and audited 82 packages in 9s
+2024-11-30 20:20:56,340 [INFO    ]
+2024-11-30 20:20:56,340 [INFO    ] 7 packages are looking for funding
+2024-11-30 20:20:56,340 [INFO    ]   run `npm fund` for details
+2024-11-30 20:20:56,340 [INFO    ]
+2024-11-30 20:20:56,340 [INFO    ] found 0 vulnerabilities
+2024-11-30 20:20:56,340 [INFO    ] npm notice
+2024-11-30 20:20:56,340 [INFO    ] npm notice New minor version of npm available! 10.5.0 -> 10.9.1
+2024-11-30 20:20:56,340 [INFO    ] npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.9.1>
+2024-11-30 20:20:56,340 [INFO    ] npm notice Run `npm install -g npm@10.9.1` to update!
+2024-11-30 20:20:56,340 [INFO    ] npm notice
+2024-11-30 20:20:56,387 [INFO    ]
+2024-11-30 20:20:56,387 [INFO    ]
+2024-11-30 20:20:56,387 [INFO    ]
+2024-11-30 20:20:56,387 [INFO    ] Installing browser binaries to D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser\.venv\Lib\site-packages\Browser\wrapper
+2024-11-30 20:20:56,387 [INFO    ] npx --quiet playwright install
+2024-11-30 20:21:03,637 [INFO    ] |                                                                                |   0% of 136.9 MiB
+2024-11-30 20:21:05,840 [INFO    ] |                                                                                |  10% of 136.9 MiB
+2024-11-30 20:21:08,012 [INFO    ] |                                                                                |  20% of 136.9 MiB
+2024-11-30 20:21:10,215 [INFO    ] |                                                                                |  30% of 136.9 MiB
+2024-11-30 20:21:12,387 [INFO    ] |                                                                                |  40% of 136.9 MiB
+2024-11-30 20:21:14,559 [INFO    ] |                                                                                |  50% of 136.9 MiB
+2024-11-30 20:21:16,747 [INFO    ] |                                                                                |  60% of 136.9 MiB
+2024-11-30 20:21:18,950 [INFO    ] |                                                                                |  70% of 136.9 MiB
+2024-11-30 20:21:21,122 [INFO    ] |                                                                                |  80% of 136.9 MiB
+2024-11-30 20:21:23,309 [INFO    ] |                                                                                |  90% of 136.9 MiB
+2024-11-30 20:21:25,481 [INFO    ] |                                                                                | 100% of 136.9 MiB
+2024-11-30 20:21:30,434 [INFO    ] |                                                                                |   0% of 87.7 MiB
+2024-11-30 20:21:31,840 [INFO    ] |                                                                                |  10% of 87.7 MiB
+2024-11-30 20:21:33,231 [INFO    ] |                                                                                |  20% of 87.7 MiB
+2024-11-30 20:21:34,637 [INFO    ] |                                                                                |  30% of 87.7 MiB
+2024-11-30 20:21:36,028 [INFO    ] |                                                                                |  40% of 87.7 MiB
+2024-11-30 20:21:37,419 [INFO    ] |                                                                                |  50% of 87.7 MiB
+2024-11-30 20:21:38,825 [INFO    ] |                                                                                |  60% of 87.7 MiB
+2024-11-30 20:21:40,238 [INFO    ] |                                                                                |  70% of 87.7 MiB
+2024-11-30 20:21:41,629 [INFO    ] |                                                                                |  80% of 87.7 MiB
+2024-11-30 20:21:43,035 [INFO    ] |                                                                                |  90% of 87.7 MiB
+2024-11-30 20:21:44,426 [INFO    ] |                                                                                | 100% of 87.7 MiB
+2024-11-30 20:21:48,051 [INFO    ] |                                                                                |   0% of 85.8 MiB
+2024-11-30 20:21:49,426 [INFO    ] |                                                                                |  10% of 85.8 MiB
+2024-11-30 20:21:50,801 [INFO    ] |                                                                                |  20% of 85.8 MiB
+2024-11-30 20:21:52,160 [INFO    ] |                                                                                |  30% of 85.8 MiB
+2024-11-30 20:21:53,535 [INFO    ] |                                                                                |  40% of 85.8 MiB
+2024-11-30 20:21:54,894 [INFO    ] |                                                                                |  50% of 85.8 MiB
+2024-11-30 20:21:56,269 [INFO    ] |                                                                                |  60% of 85.8 MiB
+2024-11-30 20:21:57,629 [INFO    ] |                                                                                |  70% of 85.8 MiB
+2024-11-30 20:21:58,988 [INFO    ] |                                                                                |  80% of 85.8 MiB
+2024-11-30 20:22:00,363 [INFO    ] |                                                                                |  90% of 85.8 MiB
+2024-11-30 20:22:01,723 [INFO    ] |                                                                                | 100% of 85.8 MiB
+2024-11-30 20:22:05,519 [INFO    ] |                                                                                |   0% of 52.7 MiB
+2024-11-30 20:22:06,457 [INFO    ] |                                                                                |  10% of 52.7 MiB
+2024-11-30 20:22:07,269 [INFO    ] |                                                                                |  20% of 52.7 MiB
+2024-11-30 20:22:08,129 [INFO    ] |                                                                                |  30% of 52.7 MiB
+2024-11-30 20:22:08,973 [INFO    ] |                                                                                |  40% of 52.7 MiB
+2024-11-30 20:22:09,879 [INFO    ] |                                                                                |  50% of 52.7 MiB
+2024-11-30 20:22:10,644 [INFO    ] |                                                                                |  60% of 52.7 MiB
+2024-11-30 20:22:11,488 [INFO    ] |                                                                                |  70% of 52.7 MiB
+2024-11-30 20:22:12,332 [INFO    ] |                                                                                |  80% of 52.7 MiB
+2024-11-30 20:22:13,160 [INFO    ] |                                                                                |  90% of 52.7 MiB
+2024-11-30 20:22:14,004 [INFO    ] |                                                                                | 100% of 52.7 MiB
+2024-11-30 20:22:22,613 [INFO    ] |                                                                                |   1% of 1.3 MiB
+2024-11-30 20:22:22,644 [INFO    ] |                                                                                |  10% of 1.3 MiB
+2024-11-30 20:22:22,676 [INFO    ] |                                                                                |  20% of 1.3 MiB
+2024-11-30 20:22:22,691 [INFO    ] |                                                                                |  30% of 1.3 MiB
+2024-11-30 20:22:22,723 [INFO    ] |                                                                                |  40% of 1.3 MiB
+2024-11-30 20:22:22,738 [INFO    ] |                                                                                |  51% of 1.3 MiB
+2024-11-30 20:22:22,769 [INFO    ] |                                                                                |  60% of 1.3 MiB
+2024-11-30 20:22:22,785 [INFO    ] |                                                                                |  70% of 1.3 MiB
+2024-11-30 20:22:22,801 [INFO    ] |                                                                                |  80% of 1.3 MiB
+2024-11-30 20:22:22,832 [INFO    ] |                                                                                |  90% of 1.3 MiB
+2024-11-30 20:22:22,848 [INFO    ] |                                                                                | 100% of 1.3 MiB
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,629 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,644 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,660 [INFO    ]
+2024-11-30 20:22:35,676 [INFO    ]
+2024-11-30 20:22:35,676 [INFO    ]
+2024-11-30 20:22:35,676 [INFO    ]
+2024-11-30 20:22:35,676 [INFO    ]
+2024-11-30 20:22:35,676 [INFO    ]
+2024-11-30 20:22:35,676 [INFO    ]
+2024-11-30 20:22:35,676 [INFO    ] rfbrowser init completed
+2024-11-30 20:22:35,676 [INFO    ] ==============================================================================================================
+
+(demo-browser-py3.12) D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>
+
+(demo-browser-py3.12) D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>robot tests/test.robot
+==============================================================================
+Test :: A simple test suite for demonstrating the Browser library.
+==============================================================================
+Open and Check Page                                                   | PASS |
+------------------------------------------------------------------------------
+Test :: A simple test suite for demonstrating the Browser library.    | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser\output.xml
+Log:     D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser\log.html
+Report:  D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser\report.html
+
+(demo-browser-py3.12) D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>exit
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>poetry add python-dotenv
+Using version ^1.0.1 for python-dotenv
+
+Updating dependencies
+Resolving dependencies... (0.2s)
+
+Package operations: 1 install, 0 updates, 0 removals
+
+  - Installing python-dotenv (1.0.1)
+
+Writing lock file
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>poetry add pyyaml
+Using version ^6.0.2 for pyyaml
+
+Updating dependencies
+Resolving dependencies... (1.6s)
+
+Package operations: 1 install, 0 updates, 0 removals
+
+  - Installing pyyaml (6.0.2)
+
+Writing lock file
+
+D:\Ohjelmistotestaus_2024\GitLab\palautukset-af9274\robot_harjoituksia\tuntiesimerkit\demo_browser>

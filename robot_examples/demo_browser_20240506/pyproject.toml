@@ -1,0 +1,29 @@
+# Ohjelmistotestaus 2024 -koulutus / Software Testing 2024 Training
+#
+# Robot Framework
+# Tuntiesimerkki / Lesson Example
+#
+# Päivä / Day: 6.5.2024
+#
+# Projekti / Project: demo_browser
+#
+# Päivitetty / Updated: 1.12.2024
+#
+# Teemu Sipiläinen
+
+[tool.poetry]
+name = "demo-browser-20240506"
+version = "0.1.0"
+description = ""
+authors = ["Teemu Sipiläinen <tsipilainen@yahoo.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+robotframework = "^7.1.1"
+robotframework-browser = "19.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

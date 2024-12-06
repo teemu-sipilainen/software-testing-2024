@@ -1,0 +1,58 @@
+{"level":30,"time":"2024-12-06T15:28:43.157Z","pid":3696,"hostname":"TS-LENOVO","msg":"Listening on 50865"}
+(node:3696) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-12-06T15:28:43.766Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-06T15:28:44.296Z","pid":3696,"hostname":"TS-LENOVO","msg":"Adding browser to stack: chromium, version: 131.0.6778.33"}
+{"level":30,"time":"2024-12-06T15:28:44.297Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-06T15:28:44.296Z","pid":3696,"hostname":"TS-LENOVO","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-06T15:28:44.320Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-06T15:28:44.320Z","pid":3696,"hostname":"TS-LENOVO","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2024-12-06T15:28:44.320Z","pid":3696,"hostname":"TS-LENOVO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-06T15:28:44.320Z","pid":3696,"hostname":"TS-LENOVO","msg":"Trace file: "}
+{"level":30,"time":"2024-12-06T15:28:44.353Z","pid":3696,"hostname":"TS-LENOVO","msg":"Changed active context"}
+{"level":30,"time":"2024-12-06T15:28:44.353Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-06T15:28:44.379Z","pid":3696,"hostname":"TS-LENOVO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-06T15:28:44.378Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-06T15:28:44.922Z","pid":3696,"hostname":"TS-LENOVO","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-06T15:28:44.923Z","pid":3696,"hostname":"TS-LENOVO","msg":"Changed active page"}
+{"level":30,"time":"2024-12-06T15:28:44.943Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-06T15:28:44.962Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-12-06T15:28:48.843Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method goTo"}
+{"level":30,"time":"2024-12-06T15:28:48.874Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-12-06T15:28:48.874Z","pid":3696,"hostname":"TS-LENOVO","Take screenshot with options: ":{"path":"D:\\Omat\\Github\\software-testing-2024\\robot_examples\\demo_browser_20240506\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-12-06T15:28:49.140Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-12-06T15:28:49.146Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-06T15:28:49.164Z","pid":3696,"hostname":"TS-LENOVO","msg":"Removed page=762bb4f8-b85b-4c2c-958b-b5c54c9248f0 from context=008e5aae-228c-4ed3-9074-a31722904981 page stack"}
+{"level":30,"time":"2024-12-06T15:28:50.058Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:12296:15)
+    at PlaywrightServer.getActiveBrowser (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-06T15:28:50.107Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-06T15:28:50.107Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:12296:15)
+    at PlaywrightServer.getActiveBrowser (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (D:\Omat\Github\software-testing-2024\robot_examples\demo_browser_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-06T15:28:50.155Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-06T15:28:50.155Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-06T15:28:50.237Z","pid":3696,"hostname":"TS-LENOVO","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-12-06T15:28:50.237Z","pid":3696,"hostname":"TS-LENOVO","msg":"End of node method closeAllBrowsers"}
