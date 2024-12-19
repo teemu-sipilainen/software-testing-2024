@@ -1,0 +1,18 @@
+# Ohjelmistotestaus 2024 -koulutus / Software Testing 2024 Training
+#
+# Robot Framework
+# Tuntiesimerkki / Lesson Example
+#
+# Päivä / Day: 8.5.2024
+#
+# Projekti / Project: restful_booker_platform_testing
+#
+# Päivitetty / Updated: 9.12.2024
+#
+# Teemu Sipiläinen
+
+branding_link: id=brandingLink
+rooms_link: //*[@id="root"]/div/nav/div[1]/ul/li[1]/a
+report_link: id=reportLink
+frontpage_link: id=frontPageLink
+messages_link: //*[@id="root"]/div/nav/div[3]/ul/li[1]

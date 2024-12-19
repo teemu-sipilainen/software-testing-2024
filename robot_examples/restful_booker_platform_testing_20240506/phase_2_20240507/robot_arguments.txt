@@ -1,0 +1,7 @@
+--outputdir results
+
+--loglevel DEBUG
+
+--pythonpath resources
+
+tests

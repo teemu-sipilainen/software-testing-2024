@@ -5,14 +5,14 @@
 #
 # Päivä / Day: 6.5.2024
 #
-# Projekti / Project: demo_browser
+# Projekti / Project: restful_booker_platform_testing
 #
-# Päivitetty / Updated: 6.12.2024
+# Päivitetty / Updated: 7.12.2024
 #
 # Teemu Sipiläinen
 
 [tool.poetry]
-name = "demo-browser-20240506"
+name = "restful-booker-platform-testing-20240506"
 version = "0.1.0"
 description = ""
 authors = ["Teemu Sipiläinen <tsipilainen@yahoo.com>"]
@@ -23,6 +23,8 @@ package-mode = false
 python = "^3.12"
 robotframework = "^7.1.1"
 robotframework-browser = "19.0.1"
+python-dotenv = "^1.0.1"
+pyyaml = "^6.0.2"
 
 [build-system]
 requires = ["poetry-core"]

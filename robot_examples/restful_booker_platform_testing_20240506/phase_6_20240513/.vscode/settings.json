@@ -1,0 +1,10 @@
+{
+    "robot.python.executable": "${workspaceFolder}/../.venv/Scripts/python.exe",
+    "robot.pythonpath": [
+        "${workspaceFolder}/resources"
+    ],
+    "robotcode.robot.pythonPath": [
+        "${workspaceFolder}/resources"
+    ],
+    "robotcode.robot.outputDir": "${workspaceFolder}/results",
+}

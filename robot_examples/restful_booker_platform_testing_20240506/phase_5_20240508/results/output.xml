@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2024-12-09T14:54:34.396759" rpa="false" schemaversion="5">
+<suite id="s1" name="Restful Booker Platform Testing 20240506" source="D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506">
+<suite id="s1-s1" name="Phase 5 20240508" source="D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\phase_5_20240508">
+<suite id="s1-s1-s1" name="Tests" source="D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\phase_5_20240508\tests">
+<suite id="s1-s1-s1-s1" name="Test" source="D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\phase_5_20240508\tests\test.robot">
+<kw name="Open Browser And Login" type="SETUP">
+<kw name="Setup Browser" owner="browser_management">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-12-09T14:54:34.875968" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "D:\\Omat\\Github\\software-testing-2024\\robot_examples\\restful_booker_platform_testing_20240506\\phase_5_20240508\\results\\browser\\traces\\temp\\675ef26d-c410-4dbf-8419-a2a0da890741"}</msg>
+<msg time="2024-12-09T14:54:34.958474" level="INFO">Starting Browser process D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js using port 56388</msg>
+<msg time="2024-12-09T14:54:34.958474" level="INFO">Node startup parameters: ['node', 'D:\\Omat\\Github\\software-testing-2024\\robot_examples\\restful_booker_platform_testing_20240506\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '56388']</msg>
+<msg time="2024-12-09T14:54:38.659449" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":500,"timeout":30000,"tracesDir":"D:\\Omat\\Github\\software-testing-2024\\robot_examples\\restful_booker_platform_testing_20240506\\phase_5_20240508\\results\\browser\\traces\\temp\\675ef26d-c410-4dbf-8419-a2a0da890741"}</msg>
+<arg>browser=${browser}</arg>
+<arg>headless=${headless}</arg>
+<arg>slowMo=${slowMo}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-12-09T14:54:34.872967" elapsed="3.787483"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-12-09T14:54:38.663450" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  }
+}</msg>
+<msg time="2024-12-09T14:54:38.702964" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-09T14:54:38.702964" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1366, 'height': 768}}</msg>
+<arg>viewport=${viewport}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-12-09T14:54:38.660450" elapsed="0.042514"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-12-09T14:54:44.507355" level="INFO">Successfully initialized new page object and opened url: https://automationintesting.online/#/admin</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-12-09T14:54:38.703963" elapsed="5.803392"/>
+</kw>
+<arg>url=${URL}</arg>
+<arg>headless=False</arg>
+<status status="PASS" start="2024-12-09T14:54:34.870966" elapsed="9.636389"/>
+</kw>
+<kw name="Fill Login Form And Submit" owner="login_page">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T14:54:44.507355" level="INFO">Clicks the element '//*[@id="collapseBanner"]/div/div[3]/div[2]/button'.</msg>
+<arg>${close_banner}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:44.507355" elapsed="0.598631"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-12-09T14:54:45.105986" level="INFO">Fills the text 'admin' in the given field.</msg>
+<arg>${username_input}</arg>
+<arg>%{RBP_USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:45.105986" elapsed="0.528306"/>
+</kw>
+<kw name="Fill Secret" owner="Browser">
+<arg>${password_input}</arg>
+<arg>%RBP_PASSWORD</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Fills the given secret from ``variable_name`` into the
+text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:45.635291" elapsed="0.536296"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T14:54:46.173585" level="INFO">Clicks the element 'data-testid=submit'.</msg>
+<arg>${login_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:46.171587" elapsed="0.561094"/>
+</kw>
+<status status="PASS" start="2024-12-09T14:54:44.507355" elapsed="2.226327"/>
+</kw>
+<status status="PASS" start="2024-12-09T14:54:34.868968" elapsed="11.864714"/>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="Removed Room Should Not Be Visible In Admin Panel" line="46">
+<kw name="Navigate To Rooms" owner="header">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T14:54:46.753682" level="INFO">Clicks the element '"Rooms"'.</msg>
+<arg>"Rooms"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:46.751682" elapsed="0.557481"/>
+</kw>
+<status status="PASS" start="2024-12-09T14:54:46.750683" elapsed="0.558480"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2024-12-09T14:54:47.322164" level="INFO">${count} = 3</msg>
+<var>${count}</var>
+<arg>.roomDelete</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:47.310164" elapsed="0.013001"/>
+</kw>
+<while condition="${count} &gt; 0">
+<iter>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-12-09T14:54:47.342165" level="INFO">Found locator('.roomDelete').first(),locator('.roomDelete').nth(1),locator('.roomDelete').nth(2) Locators successfully.</msg>
+<msg time="2024-12-09T14:54:47.343164" level="INFO">@{rooms_to_delete} = [ .roomDelete &gt;&gt; nth=0 | .roomDelete &gt;&gt; nth=1 | .roomDelete &gt;&gt; nth=2 ]</msg>
+<var>@{rooms_to_delete}</var>
+<arg>.roomDelete</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:47.326164" elapsed="0.017000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-09T14:54:47.345167" level="INFO">${index} = 2</msg>
+<var>${index}</var>
+<arg>${count} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-09T14:54:47.343164" elapsed="0.002003"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T14:54:47.347167" level="INFO">Clicks the element '.roomDelete &gt;&gt; nth=2'.</msg>
+<arg>${rooms_to_delete}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:47.345167" elapsed="0.542759"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2024-12-09T14:54:47.887926" level="INFO">${count} = 2</msg>
+<var>${count}</var>
+<arg>.roomDelete</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:47.887926" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-12-09T14:54:47.323165" elapsed="0.564761"/>
+</iter>
+<iter>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-12-09T14:54:47.904706" level="INFO">Found locator('.roomDelete').first(),locator('.roomDelete').nth(1) Locators successfully.</msg>
+<msg time="2024-12-09T14:54:47.904706" level="INFO">@{rooms_to_delete} = [ .roomDelete &gt;&gt; nth=0 | .roomDelete &gt;&gt; nth=1 ]</msg>
+<var>@{rooms_to_delete}</var>
+<arg>.roomDelete</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:47.887926" elapsed="0.016780"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-09T14:54:47.904706" level="INFO">${index} = 1</msg>
+<var>${index}</var>
+<arg>${count} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-09T14:54:47.904706" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T14:54:47.918031" level="INFO">Clicks the element '.roomDelete &gt;&gt; nth=1'.</msg>
+<arg>${rooms_to_delete}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:47.904706" elapsed="0.564514"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2024-12-09T14:54:48.469220" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>.roomDelete</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:48.469220" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-12-09T14:54:47.887926" elapsed="0.581294"/>
+</iter>
+<iter>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-12-09T14:54:48.485875" level="INFO">Found locator('.roomDelete').first() Locators successfully.</msg>
+<msg time="2024-12-09T14:54:48.485875" level="INFO">@{rooms_to_delete} = [ .roomDelete &gt;&gt; nth=0 ]</msg>
+<var>@{rooms_to_delete}</var>
+<arg>.roomDelete</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:48.469220" elapsed="0.016655"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-09T14:54:48.485875" level="INFO">${index} = 0</msg>
+<var>${index}</var>
+<arg>${count} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-09T14:54:48.485875" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T14:54:48.485875" level="INFO">Clicks the element '.roomDelete &gt;&gt; nth=0'.</msg>
+<arg>${rooms_to_delete}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:48.485875" elapsed="0.550790"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2024-12-09T14:54:49.036665" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>.roomDelete</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2024-12-09T14:54:49.036665" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-12-09T14:54:48.469220" elapsed="0.567445"/>
+</iter>
+<status status="PASS" start="2024-12-09T14:54:47.323165" elapsed="1.713500"/>
+</while>
+<doc>Toteuta testi huoneen poistamiselle ja varmista, että huone ei näy enää admin-paneelissa.</doc>
+<tag>room</tag>
+<status status="PASS" start="2024-12-09T14:54:46.733682" elapsed="2.302983"/>
+</test>
+<kw name="Close Browser" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-12-09T14:54:51.268166" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-09T14:54:49.062474" elapsed="2.206692"/>
+</kw>
+<status status="PASS" start="2024-12-09T14:54:49.060473" elapsed="2.208693"/>
+</kw>
+<doc>Testing Restful Booker Platform</doc>
+<status status="PASS" start="2024-12-09T14:54:34.466558" elapsed="16.802608"/>
+</suite>
+<status status="PASS" start="2024-12-09T14:54:34.459557" elapsed="16.852116"/>
+</suite>
+<status status="PASS" start="2024-12-09T14:54:34.453557" elapsed="16.860117"/>
+</suite>
+<status status="PASS" start="2024-12-09T14:54:34.419761" elapsed="16.895912"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">room</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Restful Booker Platform Testing 20240506">Restful Booker Platform Testing 20240506</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Phase 5 20240508">Restful Booker Platform Testing 20240506.Phase 5 20240508</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">Restful Booker Platform Testing 20240506.Phase 5 20240508.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Test">Restful Booker Platform Testing 20240506.Phase 5 20240508.Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

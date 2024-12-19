@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2024-12-09T13:11:54.012184" rpa="false" schemaversion="5">
+<suite id="s1" name="Restful Booker Platform Testing 20240506" source="D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506">
+<suite id="s1-s1" name="Phase 4 20240508" source="D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\phase_4_20240508">
+<suite id="s1-s1-s1" name="Tests" source="D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\phase_4_20240508\tests">
+<suite id="s1-s1-s1-s1" name="Test" source="D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\phase_4_20240508\tests\test.robot">
+<kw name="Open Browser And Login" type="SETUP">
+<kw name="Setup Browser" owner="browser_management">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-12-09T13:11:54.633816" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "D:\\Omat\\Github\\software-testing-2024\\robot_examples\\restful_booker_platform_testing_20240506\\phase_4_20240508\\results\\browser\\traces\\temp\\28117ddb-03b1-4b66-81db-d40bf9d6b318"}</msg>
+<msg time="2024-12-09T13:11:54.748686" level="INFO">Starting Browser process D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js using port 52681</msg>
+<msg time="2024-12-09T13:11:54.749688" level="INFO">Node startup parameters: ['node', 'D:\\Omat\\Github\\software-testing-2024\\robot_examples\\restful_booker_platform_testing_20240506\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '52681']</msg>
+<msg time="2024-12-09T13:11:59.265857" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":500,"timeout":30000,"tracesDir":"D:\\Omat\\Github\\software-testing-2024\\robot_examples\\restful_booker_platform_testing_20240506\\phase_4_20240508\\results\\browser\\traces\\temp\\28117ddb-03b1-4b66-81db-d40bf9d6b318"}</msg>
+<arg>browser=${browser}</arg>
+<arg>headless=${headless}</arg>
+<arg>slowMo=${slowMo}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-12-09T13:11:54.629289" elapsed="4.637535"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-12-09T13:11:59.270367" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 768,
+    "width": 1366
+  }
+}</msg>
+<msg time="2024-12-09T13:11:59.330834" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-09T13:11:59.330834" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 768, 'width': 1366}}</msg>
+<arg>viewport=${viewport}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-12-09T13:11:59.267368" elapsed="0.064466"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-12-09T13:12:02.222875" level="INFO">Successfully initialized new page object and opened url: https://automationintesting.online/#/admin</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-12-09T13:11:59.331834" elapsed="2.891041"/>
+</kw>
+<arg>url=${URL}</arg>
+<arg>headless=False</arg>
+<status status="PASS" start="2024-12-09T13:11:54.625931" elapsed="7.596944"/>
+</kw>
+<kw name="Fill Login Form And Submit" owner="login_page">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T13:12:02.227354" level="INFO">Clicks the element '//*[@id="collapseBanner"]/div/div[3]/div[2]/button'.</msg>
+<arg>${close_banner}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T13:12:02.225009" elapsed="0.600933"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-12-09T13:12:02.829970" level="INFO">Fills the text 'admin' in the given field.</msg>
+<arg>${username_input}</arg>
+<arg>%{RBP_USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T13:12:02.825942" elapsed="0.539734"/>
+</kw>
+<kw name="Fill Secret" owner="Browser">
+<arg>${password_input}</arg>
+<arg>%RBP_PASSWORD</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Fills the given secret from ``variable_name`` into the
+text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T13:12:03.366706" elapsed="0.535682"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T13:12:03.903386" level="INFO">Clicks the element 'data-testid=submit'.</msg>
+<arg>${login_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T13:12:03.902388" elapsed="0.580142"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:12:02.222875" elapsed="2.260656"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:11:54.623911" elapsed="9.859620"/>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="Update Branding" line="29">
+<kw name="Navigate To Branding" owner="header">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T13:12:04.577003" level="INFO">Clicks the element '"Branding"'.</msg>
+<arg>"Branding"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T13:12:04.575272" elapsed="0.567137"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:12:04.572763" elapsed="0.569646"/>
+</kw>
+<kw name="Verify Branding">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T13:12:05.151433" level="INFO">Clicks the element '"Branding"'.</msg>
+<arg>"Branding"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T13:12:05.149431" elapsed="0.549995"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-09T13:12:05.737604" level="INFO">Text: 'Shady Meadows B&amp;B'</msg>
+<msg time="2024-12-09T13:12:05.738605" level="INFO">${branding} = Shady Meadows B&amp;B</msg>
+<var>${branding}</var>
+<arg>id=name</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T13:12:05.699426" elapsed="0.039179"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${branding}</arg>
+<arg>${BRANDING_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-12-09T13:12:05.738605" elapsed="0.002002"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:12:05.148431" elapsed="0.592176"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:12:04.483531" elapsed="1.259074"/>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Get Room Types" line="33">
+<kw name="Navigate To Rooms" owner="header">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T13:12:05.769602" level="INFO">Clicks the element '"Rooms"'.</msg>
+<arg>"Rooms"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T13:12:05.766827" elapsed="0.575858"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:12:05.765982" elapsed="0.576703"/>
+</kw>
+<kw name="Select Room Type" owner="rooms_page">
+<kw name="Get Select Options" owner="Browser">
+<msg time="2024-12-09T13:12:06.380559" level="INFO">entry {
+  value: "Single"
+  label: "Single"
+  selected: true
+}
+entry {
+  value: "Twin"
+  label: "Twin"
+  index: 1
+}
+entry {
+  value: "Double"
+  label: "Double"
+  index: 2
+}
+entry {
+  value: "Family"
+  label: "Family"
+  index: 3
+}
+entry {
+  value: "Suite"
+  label: "Suite"
+  index: 4
+}
+</msg>
+<msg time="2024-12-09T13:12:06.381561" level="INFO">${type_options} = [{'index': 0, 'value': 'Single', 'label': 'Single', 'selected': True}, {'index': 1, 'value': 'Twin', 'label': 'Twin', 'selected': False}, {'index': 2, 'value': 'Double', 'label': 'Double', 'selected':...</msg>
+<var>${type_options}</var>
+<arg>${select_type}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns attributes of options of a ``select`` element as a list of dictionaries.</doc>
+<status status="PASS" start="2024-12-09T13:12:06.346729" elapsed="0.035831"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T13:12:06.383559" level="INFO">[{'index': 0, 'value': 'Single', 'label': 'Single', 'selected': True}, {'index': 1, 'value': 'Twin', 'label': 'Twin', 'selected': False}, {'index': 2, 'value': 'Double', 'label': 'Double', 'selected': False}, {'index': 3, 'value': 'Family', 'label': 'Family', 'selected': False}, {'index': 4, 'value': 'Suite', 'label': 'Suite', 'selected': False}]</msg>
+<arg>${type_options}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T13:12:06.382560" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:12:06.343684" elapsed="0.041384"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:12:05.755162" elapsed="0.635441"/>
+</test>
+<kw name="Close Browser" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-12-09T13:12:08.759638" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-09T13:12:06.423728" elapsed="2.336908"/>
+</kw>
+<status status="PASS" start="2024-12-09T13:12:06.422727" elapsed="2.337909"/>
+</kw>
+<doc>Testing Restful Booker Platform</doc>
+<status status="PASS" start="2024-12-09T13:11:54.105987" elapsed="14.654649"/>
+</suite>
+<status status="PASS" start="2024-12-09T13:11:54.097213" elapsed="14.708623"/>
+</suite>
+<status status="PASS" start="2024-12-09T13:11:54.087906" elapsed="14.721183"/>
+</suite>
+<status status="PASS" start="2024-12-09T13:11:54.035689" elapsed="14.775401"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Restful Booker Platform Testing 20240506">Restful Booker Platform Testing 20240506</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Phase 4 20240508">Restful Booker Platform Testing 20240506.Phase 4 20240508</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Tests">Restful Booker Platform Testing 20240506.Phase 4 20240508.Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1" name="Test">Restful Booker Platform Testing 20240506.Phase 4 20240508.Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

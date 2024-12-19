@@ -1,0 +1,7 @@
+{
+    "robot.python.executable": "${workspaceFolder}/.venv/Scripts/python.exe", 
+    "robot.pythonpath": [
+        "${workspaceFolder}/phase1_20240506resources", 
+        "${workspaceFolder}/phase2_20240507/resources"
+    ]
+}

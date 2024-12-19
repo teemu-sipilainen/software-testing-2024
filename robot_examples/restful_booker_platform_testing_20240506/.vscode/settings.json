@@ -1,0 +1,14 @@
+{
+    "robot.python.executable": "${workspaceFolder}/.venv/Scripts/python.exe", 
+    "robot.pythonpath": [
+        "${workspaceFolder}/phase_2_20240507/resources",
+        "${workspaceFolder}/phase_3_20240507/resources",
+    ], 
+    "robotcode.robot.pythonPath": [
+        "./phase_2_20240507/resources",
+        "./phase_3_20240507/resources",
+        "${workspaceFolder}/phase_2_20240507/resources",
+        "${workspaceFolder}/phase_3_20240507/resources",
+    ],
+    "robotcode.robot.outputDir": "${workspaceFolder}/results",
+}

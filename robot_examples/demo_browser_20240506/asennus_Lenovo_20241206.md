@@ -8,7 +8,7 @@
 
 ### Projekti / Project: demo_browser
 
-### Päivitetty / Updated: 1.12.2024
+### Päivitetty / Updated: 6.12.2024
 
 ### Teemu Sipiläinen
 

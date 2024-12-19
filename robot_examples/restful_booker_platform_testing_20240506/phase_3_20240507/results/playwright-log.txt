@@ -1,0 +1,64 @@
+{"level":30,"time":"2024-12-09T09:39:22.867Z","pid":8264,"hostname":"TS-LENOVO","msg":"Listening on 51241"}
+(node:8264) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-12-09T09:39:23.156Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-09T09:39:23.879Z","pid":8264,"hostname":"TS-LENOVO","msg":"Adding browser to stack: chromium, version: 131.0.6778.33"}
+{"level":30,"time":"2024-12-09T09:39:23.880Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-09T09:39:23.880Z","pid":8264,"hostname":"TS-LENOVO","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-09T09:39:23.891Z","pid":8264,"hostname":"TS-LENOVO","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1366,\"height\":768}}"}
+{"level":30,"time":"2024-12-09T09:39:23.891Z","pid":8264,"hostname":"TS-LENOVO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-09T09:39:23.891Z","pid":8264,"hostname":"TS-LENOVO","msg":"Trace file: "}
+{"level":30,"time":"2024-12-09T09:39:23.890Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-09T09:39:23.939Z","pid":8264,"hostname":"TS-LENOVO","msg":"Changed active context"}
+{"level":30,"time":"2024-12-09T09:39:23.939Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-09T09:39:23.948Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-09T09:39:23.949Z","pid":8264,"hostname":"TS-LENOVO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-09T09:39:24.390Z","pid":8264,"hostname":"TS-LENOVO","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-09T09:39:24.390Z","pid":8264,"hostname":"TS-LENOVO","msg":"Changed active page"}
+{"level":30,"time":"2024-12-09T09:39:29.194Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-09T09:39:29.207Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-09T09:39:29.207Z","pid":8264,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with \"Let me hack!\" in page."}
+{"level":30,"time":"2024-12-09T09:39:29.785Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method click"}
+{"level":30,"time":"2024-12-09T09:39:29.793Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-12-09T09:39:29.793Z","pid":8264,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with data-testid=username in page."}
+{"level":30,"time":"2024-12-09T09:39:30.328Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method fillText"}
+{"level":30,"time":"2024-12-09T09:39:30.339Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-12-09T09:39:30.339Z","pid":8264,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with data-testid=password in page."}
+{"level":30,"time":"2024-12-09T09:39:30.872Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method fillText"}
+{"level":30,"time":"2024-12-09T09:39:30.882Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-09T09:39:30.882Z","pid":8264,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with data-testid=submit in page."}
+{"level":30,"time":"2024-12-09T09:39:31.435Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method click"}
+{"level":30,"time":"2024-12-09T09:39:31.444Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-09T09:39:31.448Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-09T09:39:31.459Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-09T09:39:31.459Z","pid":8264,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with \"Branding\" in page."}
+{"level":30,"time":"2024-12-09T09:39:32.027Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method click"}
+{"level":30,"time":"2024-12-09T09:39:32.038Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-09T09:39:32.039Z","pid":8264,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with \"Branding\" in page."}
+{"level":30,"time":"2024-12-09T09:39:32.590Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method click"}
+{"level":30,"time":"2024-12-09T09:39:32.599Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-09T09:39:32.600Z","pid":8264,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with id=name in page."}
+{"level":30,"time":"2024-12-09T09:39:38.613Z","pid":8264,"hostname":"TS-LENOVO","msg":"Retrieved text for element id=name containing Shady Meadows B&B Test Update"}
+{"level":30,"time":"2024-12-09T09:39:38.613Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-09T09:39:38.629Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-09T09:39:38.631Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-09T09:39:38.641Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-12-09T09:39:38.659Z","pid":8264,"hostname":"TS-LENOVO","msg":"Removed page=f3a3efb8-eb0b-4144-9824-83eaa2384227 from context=c04620a0-d195-40fa-80e6-e43842b25f2d page stack"}
+{"level":30,"time":"2024-12-09T09:39:39.888Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:12296:15)
+    at PlaywrightServer.getActiveBrowser (D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (D:\Omat\Github\software-testing-2024\robot_examples\restful_booker_platform_testing_20240506\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-12-09T09:39:39.940Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-09T09:39:39.940Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-09T09:39:40.047Z","pid":8264,"hostname":"TS-LENOVO","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-12-09T09:39:40.047Z","pid":8264,"hostname":"TS-LENOVO","msg":"End of node method closeAllBrowsers"}
